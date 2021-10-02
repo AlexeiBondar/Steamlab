@@ -1,0 +1,261 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--=========== Loader =============-->
+<div id="gen-loading">
+    <div id="gen-loading-center">
+        <img src="~/images/logo-1.png" alt="loading">
+    </div>
+</div>
+<!--=========== Loader =============-->
+
+<!--========== Header ==============-->
+<header id="gen-header" class="gen-header-style-1 gen-has-sticky">
+    <div class="gen-bottom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid logo" src="~/images/logo-1.png" alt="streamlab-image">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="gen-menu-contain" class="gen-menu-contain">
+                                <ul id="gen-main-menu" class="navbar-nav ml-auto">
+                                    <li class="menu-item active">
+                                        <a href="@Url.Action("Index", "Home")" aria-current="page">Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("Movies", "Movies")">Movies</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("Shows", "TVShows")">Tv Shows</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("Video", "Video")">Video</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Pages</a>
+                                        <i class="fa fa-chevron-down gen-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="@Url.Action("Blog", "Blog")">Blog</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="@Url.Action("Pricing", "Pricing")">Pricing</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="@Url.Action("ContactUs", "Contact")">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gen-header-info-box">
+                            <div class="gen-menu-search-block">
+                                <a href="javascript:void(0)" id="gen-seacrh-btn"><i class="fa fa-search"></i></a>
+                                <div class="gen-search-form">
+                                    <form role="search" method="get" class="search-form" action="#">
+                                        <label>
+                                            <span class="screen-reader-text"></span>
+                                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                                        </label>
+                                        <button type="submit" class="search-submit">
+                                            <span class="screen-reader-text"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="gen-account-holder">
+                                <a href="javascript:void(0)" id="gen-user-btn"><i class="fa fa-user"></i></a>
+                                <div class="gen-account-menu">
+                                    <ul class="gen-account-menu">
+                                        <!-- Pms Menu -->
+                                        <li>
+                                            <a href="@Url.Action("LogIn", "Home")">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                                login
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Register", "Home")">
+                                                <i class="fa fa-user"></i>
+                                                Register
+                                            </a>
+                                        </li>
+                                        <!-- Library Menu -->
+                                        <li>
+                                            <a href="@Url.Action("Library", "Home")">
+                                                <i class="fa fa-indent"></i>
+                                                Library
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Library", "Home")">
+                                                <i class="fa fa-list"></i>
+                                                Movie Playlist
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Library", "Home")">
+                                                <i class="fa fa-list"></i>
+                                                Tv Show Playlist
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Library", "Home")">
+                                                <i class="fa fa-list"></i>
+                                                Video Playlist
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("UploadVideo", "Home")">
+                                                <i class="fa fa-upload"></i>
+                                                Upload Video
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gen-btn-container">
+                                <a href="@Url.Action("Register", "Home")" class="gen-button">
+                                    <div class="gen-button-block">
+                                        <span class="gen-button-line-left"></span>
+                                        <span class="gen-button-text">Subscribe</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========== Header ==============-->
+
+@RenderBody()
+
+<!-- footer start -->
+<footer id="gen-footer">
+    <div class="gen-footer-style-1">
+        <div class="gen-footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="widget">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="~/images/logo-1.png" class="gen-footer-logo" alt="gen-footer-logo">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <ul class="social-link">
+                                        <li><a href="@Url.Action("NotFound404", "Home")" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="@Url.Action("NotFound404", "Home")" class="facebook"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="@Url.Action("NotFound404", "Home")" class="facebook"><i class="fab fa-skype"></i></a></li>
+                                        <li><a href="@Url.Action("NotFound404", "Home")" class="facebook"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="widget">
+                            <h4 class="footer-title">Explore</h4>
+                            <div class="menu-explore-container">
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("Index", "Home")" aria-current="page">Home</a>
+                                    </li>
+                                    <li class="menu-item"><a href="@Url.Action("NotFound404", "Home")">Movies</a></li>
+                                    <li class="menu-item"><a href="@Url.Action("Shows", "TVShows")">Tv Shows</a></li>
+                                    <li class="menu-item"><a href="@Url.Action("Videos", "Videos")">Videos</a></li>
+                                    <li class="menu-item"><a href="#">Actors</a></li>
+                                    <li class="menu-item"><a href="#">Basketball</a></li>
+                                    <li class="menu-item"><a href="#">Celebrity</a></li>
+                                    <li class="menu-item"><a href="#">Cross</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="widget">
+                            <h4 class="footer-title">Company</h4>
+                            <div class="menu-about-container">
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("ContactUs", "Contact")">Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("ContactUs", "Contact")">
+                                            Privacy
+                                            Policy
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("ContactUs", "Contact")">
+                                            Terms Of
+                                            Use
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="@Url.Action("ContactUs", "Contact")">
+                                            Help
+                                            Center
+                                        </a>
+                                    </li>
+                                    <li class="menu-item"><a href="@Url.Action("ContactUs", "Contact")">contact us</a></li>
+                                    <li class="menu-item"><a href="@Url.Action("Pricing", "Pricing")">Subscribe</a></li>
+                                    <li class="menu-item"><a href="#">Our Team</a></li>
+                                    <li class="menu-item"><a href="@Url.Action("ContactUs", "Contact")">Faq</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3  col-md-6">
+                        <div class="widget">
+                            <h4 class="footer-title">Downlaod App</h4>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <a href="@Url.Action("NotFound404", "Home")">
+                                        <img src="~/images/asset-35.png" class="gen-playstore-logo" alt="playstore">
+                                    </a>
+                                    <a href="@Url.Action("NotFound404", "Home")">
+                                        <img src="~/images/asset-36.png" class="gen-appstore-logo" alt="appstore">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gen-copyright-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 align-self-center">
+                        <span class="gen-copyright">
+                            <a target="_blank" href="@Url.Action("NotFound404", "Home")">
+                                Copyright 2021 stremlab All Rights
+                                Reserved.
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer End -->
+<!-- Back-to-Top start -->
+<div id="back-to-top">
+    <a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+</div>
+<!-- Back-to-Top end -->

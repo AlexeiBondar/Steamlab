@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab", "Lab\Lab.csproj", "{FDF9E5B9-9D1A-4F2D-BF7A-C713B690EDBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Database", "Lab.Database\Lab.Database.csproj", "{7FD35B7C-AD5C-46CD-AA05-E8CB8C006185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Services", "Lab.Services\Lab.Services.csproj", "{052980F7-0622-4C8A-A797-1FA180563BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDF9E5B9-9D1A-4F2D-BF7A-C713B690EDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF9E5B9-9D1A-4F2D-BF7A-C713B690EDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF9E5B9-9D1A-4F2D-BF7A-C713B690EDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF9E5B9-9D1A-4F2D-BF7A-C713B690EDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD35B7C-AD5C-46CD-AA05-E8CB8C006185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD35B7C-AD5C-46CD-AA05-E8CB8C006185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD35B7C-AD5C-46CD-AA05-E8CB8C006185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD35B7C-AD5C-46CD-AA05-E8CB8C006185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052980F7-0622-4C8A-A797-1FA180563BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052980F7-0622-4C8A-A797-1FA180563BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052980F7-0622-4C8A-A797-1FA180563BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052980F7-0622-4C8A-A797-1FA180563BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D43F57CE-D14B-4DA0-AEB1-C68425188BE7}
+	EndGlobalSection
+EndGlobal
